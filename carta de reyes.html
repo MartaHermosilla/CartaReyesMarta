@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CataMarta</title>
+    <link rel="stylesheet" text="text/css" href="reyes.css"> 
+    <script>
+    var max = 100; //NUMERO MAXIMO QUE SE VA A GENERAR
+    var min = 1; // NUMERO MINIMO QUE SE VA A GENERAR
+    var numerom = Math.random()*(max-min) + min; // ECUACION QUE GENERA UN NUMERO ENTRE EL NUMERO MAXIMO (MAX) Y EL NUMERO MINIMO QUE ES (MIN)
+    numerom = parseInt(numerom); // LA FUNCION parseInt RECIBE UN PARAMETRO Y LO CONVIERTE EN UN NUMERO ENTERO, EN ESTE CASO LA VARIABLE numerom GENERA UN NUMERO ENTRE 1 Y 100 QUE VA A SER CONVERTIDO A ENTERO EN CASO DE QUE ESTE SEA FLOTANTE.
+    
+    while(true)
+    { //EL WHILE TRUE VA A PERMITIR QUE SE EJECUTE TODO EL CODIGO HASTA QUE EXISTA UN BREAK. EN ESTE CASO EL USUARIO VA A SEGUIR COLOCANDO EL NUMERO HASTA QUE LO ADIVINE.
+      var usuario = prompt("COLOCA UN NUMERO PARA ADIVINAR EL NUMERO MAGICO Y DESCUBRIR LA CARTA DE REYES DE MARTA"); // EL USUARIO VA A CLOCAR SU NUMERO Y VA A SER COMPARADO CON EL NUMERO MAGICO.
+
+        if(usuario == numerom)
+        { //SI EL NUMERO DEL usuario ES IDENTICO (CONSIDERANDO EL NUMERO Y EL TIPO DE NUMERO QUE EN ESTE CASO ES ENTERO) ENTONCES
+        alert("HAS GANADO CONTINUA Y DESCUBRE TU PREMIO");//MUESTRA UNA ALERTA
+        break;//Y TERMINA EL PROGRAMA
+        }
+        else if(usuario == 0){// SI EL NUMERO DEL usuario ES IGUAL A 0 ENTONCES EL PROGRAMA ENTENDERA QUE EL usuario NO QUIERE JUGAR MAS Y TERMINARA EL PROGRAMA
+            break; // CON UN BREAK;"
+        }
+        else if(usuario < numerom){
+            // SI EL USUARIO COLOCA UN NUMERO MENOR QUE EL NUMEROM, ENTONCES EL PROGRAMA LE AVISARA CON UNA ALERTA Y PERMITIRA QUE EL USUARIO VUELVA A COLOCAR EL NUMERO HASTA QUE LO ADIVINE GRACIAS AL WHILE(TRUE)
+            alert("EL NUMERO ES MENOR QUE EL NUMERO MAGICO, VUELVE A INTENTARLO" );
+        }  
+        else if(usuario > numerom){
+  
+            // SI EL USUARIO COLOCA UN NUMERO MAYOR QUE EL NUMEROM, ENTONCES EL PROGRAMA LE AVISARA CON UNA ALERTA Y PERMITIRA QUE EL USUARIO VUELVA A COLOCAR EL NUMERO HASTA QUE LO ADIVINE GRACIAS AL WHILE(TRUE)
+            alert("EL NUMERO ES MAYOR QUE EL NUMERO MAGICO, VUELVE A INTENTARLO");
+        }
+    } // AQUI CIERRA EL WHILE 
+    </script> 
+</head>
+<body>
+   
+    <header>
+    
+    </header>
+    <nav>
+            <p>Felicidades, como has ganado la partida se te da la posiblilidad de aprender los deseos más profundos de Marta</p>
+
+    </nav>
+    <main>
+        <h1>La carta</h1>
+        <section>
+            <article>
+            
+                <p>Queridos Reyes Magos,</p>
+                <p>Como todos los años llega el momento de que os escriba pidiendo lo que quiero, pero como todos los años 
+                no tengo muy claro que pedir.
+                </p>
+                <p>Este año vamos mejorando y he conseguido tener alguna idea para ayudaros, aunque las sorpresas siempre son bienvenidas.</p>
+                <ul>
+                    <li><b>Zapatillas negras:</b>Necesito dos pares de zapatillas negras unas que sean para deporte y otras que sean de persona humana  </li>
+                    <li><b>Ketelball 20kg:</b> Una ketelball para entrenar, si los reyes consideran que estoy mucho más fuerte y necesito más peso lo dejo a su criterio </li>
+                    <li><b>Catre de campamento:</b> Un catre del decathlon que sea cómodo de transportar</li>
+                    <li><b>Chándal:</b>Uno que sea vestidor </li>
+                    <li><b>Pantalones cortos entrenamiento:</b>No necesito que sean de marca, unos del decathlon me sirven =]</li>
+                </ul>
+                <p>
+                    Estas son las cosas que yo he podido pensar, pero si no me traen todo no pasa nada ya que simplemente son ideas.
+                </p>
+                <p>
+                    He de recalcar que este año me he portado muy bien, aunque este año tengo que mejorar en algun que otro detalle.
+                </p>
+                <p>Mucahs gracias <br> <b>Marta</b></p>
+            </article>
+        </section>
+        <aside>
+            <a href="https://www.decathlon.es/es/p/kettlebell-pesa-rusa-20-kg-cross-training-musculacion-corength/_/R-p-152876" target="_blank" rel="noopener noreferrer"><img class="lista" src="img/ketelball.jpg" alt="imagen ketelball"></a>
+            <a href="https://www.decathlon.es/es/search?Ntt=catre" target="_blank"><img class="lista" src="img/catre.avif"></a>
+            <a href="https://www.decathlon.es/es/p/mallas-short-ciclista-mujer-domyos-fit-500-negro/_/R-p-303061?mc=8511786" target="_blank"><img class="lista" src="img/pantalon.avif" alt="pantalón"></a>
+            <a href="https://eu.puma.com/es/es/pd/chandal-para-mujer-classic-tricot-op/675234.html" target="_blank"><img class="lista" src="img/chandal.webp" alt="chandal"></a>
+            <a href="https://www.zalando.es/pier-one-zapatillas-black-pi912o04o-q11.html?size=43&allophones=0&wmc=SEM340_NB_GO._3922365855_680653101_35177162592.&opc=2211&mpp=google|v1|
+            |pla-297546631617||1005545||g|c||149809974124||pla|PI912O04O-Q110043000|297546631617|1|&gclsrc=aw.ds&gad_source=1&gclid=EAIaIQobChMIsMKOx9KMgwMVLAuiAx2wmgftEAkYASABEgKcQPD_BwE" target="_blank"><img src="img/zapatillas.webp" alt="Zapatillas" class="lista"></a>
+        </aside>
+    
+    
+    </main>
+    <footer>
+        <img id="for" src="img/poother.jpg" alt="">
+    </footer>   
+</body>
+</html>

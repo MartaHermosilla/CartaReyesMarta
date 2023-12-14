@@ -1,0 +1,51 @@
+
+.lista
+{
+height: 190px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-image: url("img/poother.jpg");
+    
+
+}
+#for{height: 1%;}
+body {
+    text-align: center;
+    background-color: aliceblue
+}
+
+header{
+    height: 100px;
+    background-image: url("img/heatherreyes.jpg")
+}
+
+
+main{
+    position: relative; 
+    height: 100%; 
+    width: 100%;
+    
+}
+aside{
+    position: absolute;
+    height: 50%; 
+    width: 48%; 
+    left: 50%; 
+    top: 15%;
+    
+}
+section{
+    margin: 5%;
+    position: relative;
+    height: 90%;
+    width: 40%;
+    top: 5%;
+
+}
+article{
+    position: relative ;
+    width: 95%;
+}
